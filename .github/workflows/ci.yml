@@ -1,0 +1,24 @@
+name: Continuous Integration
+
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+    branches: ["main"]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Fetch Mathlib Cache
+        run: |
+          # This pulls down precompiled .olean files so your CI doesn't take hours
+          lake exe cache get
+
+      - name: Build and Verify Proofs
+        uses: leanprover/lean-action@v1
+        with:
+          auto-config: true
