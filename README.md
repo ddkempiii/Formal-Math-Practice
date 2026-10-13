@@ -1,1 +1,1 @@
-# graduate-math
+# Formal Math Research [![Lean Action CI](https://github.com/ddkempiii/Formal-Math-Research/actions/workflows/lean_action_ci.yml/badge.svg)](https://github.com/ddkempiii/Formal-Math-Research/actions/workflows/lean_action_ci.yml)
