@@ -8,8 +8,8 @@ package "graduate-math" where
   ]
   -- add any additional package configuration options here
 
-require mathlib from git
-  "https://github.com/leanprover-community/mathlib4.git"
+require "leanprover-community" / "mathlib"
+
 @[default_target]
 lean_lib «GraduateMath» where
   -- add any library configuration options here

@@ -1,7 +1,7 @@
 import Mathlib.Topology.Instances.Real.Lemmas
 import Mathlib.Analysis.Normed.Operator.BanachSteinhaus
 import GraduateMath.Basic
-import Mathlib.Tactic.Cases
+
 
 open Set Filter
 open Topology Filter
@@ -41,7 +41,7 @@ example {X : Type*} [MetricSpace X] [CompactSpace X]
   constructor
   show dist m.1 m.2 > 0
   · rcases le_iff_eq_or_lt.mp (dist_nonneg (x := m.1) (y := m.2)) with h' | h'
-    rw [mem_setOf_eq, pdef] at mink; dsimp at mink
+    rw [mem_ofPred_eq, pdef] at mink; dsimp at mink
     rw [eq_comm, dist_eq_zero] at h'; simp [h'] at mink
     linarith
     assumption
