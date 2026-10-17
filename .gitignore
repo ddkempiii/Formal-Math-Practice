@@ -1,1 +1,4 @@
-/.lake
+/.lake/
+build/
+lean-lock.toml
+.DS_Store
