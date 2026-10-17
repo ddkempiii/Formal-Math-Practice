@@ -1,1 +1,0 @@
-{"decls":{},"directImports":[["Mathlib.Tactic",false,false,false],["Mathlib.Util.Delaborators",false,false,false]],"module":"GraduateMath.Basic","references":{"{\"c\":{\"m\":\"Lean.Log\",\"n\":\"Lean.warningAsError\"}}":{"definition":null,"usages":[[4,11,4,25]]}},"version":5}
